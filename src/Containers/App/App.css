@@ -1,0 +1,71 @@
+.App {
+
+}
+
+/* Current Avatar */
+.CurrentAvatar {
+  display: block;
+
+  border-radius: 100px;
+
+  height: 100px;
+
+  margin: 30vh auto;
+  margin-bottom: 0;
+
+  cursor: pointer;
+} 
+
+.CurrentAvatar:hover {
+  border: 2px solid #eb4d4b;
+
+  transform: translateY(-2px);
+}
+/* Current Avatar End */
+
+/* Avatar Picker */
+.AvatarPicker {
+  background-color: #4834d4;
+
+  width: 500px;
+  height: 200px;
+
+  margin: 30px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 3px;
+}
+/* Avatar Picker End */
+
+/* Avatar Small */
+.AvatarSmall {
+  height: 60px;
+
+  border-radius: 100px;
+
+  cursor: pointer;
+
+  margin: 10px;
+}
+
+.AvatarSmall:hover {
+  border: 2px solid tomato;
+}
+
+.AvatarSmall.Loading {
+  animation: loadingAnimation 1000ms infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes loadingAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* Avatar Small End */
